@@ -27,13 +27,13 @@ export default function Header() {
         {/* Phone */}
         <div className="hidden md:flex items-center gap-3">
           <div className="text-right">
-            <a href="tel:+79001234567" className="text-base font-bold text-text hover:text-primary transition">
-              +7 (900) 123-45-67
+            <a href="tel:+79775530483" className="text-base font-bold text-text hover:text-primary transition">
+              +7 (977) 553-04-83
             </a>
             <p className="text-xs text-text-secondary">Пн–Сб: 9:00–19:00</p>
           </div>
           <a
-            href="tel:+79001234567"
+            href="tel:+79775530483"
             className="w-10 h-10 rounded-full bg-green text-white flex items-center justify-center hover:bg-green-light transition"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -69,7 +69,7 @@ export default function Header() {
             <a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-primary py-1">Контакты</a>
           </nav>
           <div className="mt-4 pt-3 border-t border-border">
-            <a href="tel:+79001234567" className="text-base font-bold text-text">+7 (900) 123-45-67</a>
+            <a href="tel:+79775530483" className="text-base font-bold text-text">+7 (977) 553-04-83</a>
             <p className="text-xs text-text-secondary mt-1">Пн–Сб: 9:00–19:00</p>
           </div>
         </div>

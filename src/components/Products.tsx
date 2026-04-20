@@ -58,12 +58,15 @@ const products: Product[] = [
   },
 ];
 
-/* MAX Messenger icon SVG */
+/* MAX Messenger icon — настоящая иконка приложения */
 function MaxIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 13.5h-2l-2.5-3.5-2.5 3.5h-2l3.5-5-3.5-5h2l2.5 3.5 2.5-3.5h2l-3.5 5 3.5 5z" />
-    </svg>
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/069/991/653/large_2x/max-app-icon-on-a-transparent-background-free-png.png"
+      alt="MAX"
+      className={className}
+      style={{ objectFit: 'contain' }}
+    />
   );
 }
 
@@ -124,7 +127,7 @@ export default function Products() {
               {/* CTA — только звонок и MAX мессенджер */}
               <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:+79001234567"
+                  href="tel:+79775530483"
                   className="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold py-3 rounded-xl hover:bg-primary-dark transition text-sm"
                 >
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -133,12 +136,12 @@ export default function Products() {
                   Позвонить
                 </a>
                 <a
-                  href="https://max.ru/chat"
+                  href="https://max.ru/+79775530483"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-semibold py-3 rounded-xl hover:bg-primary hover:text-white transition text-sm"
                 >
-                  <MaxIcon className="w-4 h-4" />
+                  <MaxIcon className="w-6 h-6" />
                   MAX мессенджер
                 </a>
               </div>
@@ -155,7 +158,7 @@ export default function Products() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:+79001234567"
+              href="tel:+79775530483"
               className="inline-flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-dark transition text-sm"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -164,12 +167,12 @@ export default function Products() {
               Позвонить и уточнить
             </a>
             <a
-              href="https://max.ru/chat"
+              href="https://max.ru/+79775530483"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary font-semibold px-6 py-3 rounded-xl hover:bg-primary hover:text-white transition text-sm"
             >
-              <MaxIcon className="w-4 h-4" />
+              <MaxIcon className="w-6 h-6" />
               Написать в MAX
             </a>
           </div>
