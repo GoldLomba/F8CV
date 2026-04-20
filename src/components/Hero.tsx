@@ -58,7 +58,11 @@ export default function Hero() {
 
           {/* Right — Engine illustration */}
           <div className="flex-1 flex justify-center">
-            <img src="../src/images/F8CV.jpeg" alt=""  className="image-decor"/>
+            <div className="w-full max-w-sm bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-12 flex items-center justify-center">
+              <svg className="w-48 h-48 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.8}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>

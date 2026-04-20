@@ -8,14 +8,16 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
       <Header />
-      <Hero />
-      <Products />
-      <Specs />
-      <Delivery />
-      <Contact />
+      <main>
+        <Hero />
+        <Products />
+        <Specs />
+        <Delivery />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
