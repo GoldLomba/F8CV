@@ -22,7 +22,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {/* Phone */}
           <a
-            href="tel:+79775530483"
+            href="tel:+79382060824"
             className="border border-border rounded-2xl p-6 text-center hover:shadow-md transition-shadow bg-white"
           >
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -31,13 +31,13 @@ export default function Contact() {
               </svg>
             </div>
             <h3 className="text-base font-bold text-text">Телефон</h3>
-            <p className="text-primary font-bold text-lg mt-2">+7 (977) 553-04-83</p>
+            <p className="text-primary font-bold text-lg mt-2">+7 (938) 206-08-24</p>
             <p className="text-xs text-text-secondary mt-1">Пн–Сб: 9:00–19:00</p>
           </a>
 
           {/* MAX мессенджер */}
           <a
-            href="https://max.ru/+79775530483"
+            href="https://max.ru/+79382060824"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-gray-200 rounded-2xl p-6 text-center hover:shadow-md transition-shadow bg-white"
@@ -72,16 +72,16 @@ export default function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
             <a
-              href="tel:+79775530483"
+              href="tel:+79382060824"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold px-8 py-3.5 rounded-xl hover:bg-gray-100 transition"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              +7 (977) 553-04-83
+              +7 (938) 206-08-24
             </a>
             <a
-              href="https://max.ru/+79775530483"
+              href="https://max.ru/+79382060824"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-3.5 rounded-xl hover:bg-white/10 transition"
