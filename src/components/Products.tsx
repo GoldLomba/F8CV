@@ -92,7 +92,8 @@ export default function Products() {
                 <span className={`text-xl font-bold px-5 py-2 rounded-full ${p.badgeColor}`}>{p.badge}</span>
                 {p.icon}
               </div>
-
+              <p className="text-4xl font-bold text-[#1d4ed8] bg-bg-light py-3 px-4 rounded-xl inline-block mb-4"> 75 000 ₽ </p>
+ 
               <h3 className="text-xl font-bold text-text">{p.title}</h3>
               <p className="text-sm text-text-secondary mt-1">{p.subtitle}</p>
               <p className="text-sm text-text-secondary mt-3 leading-relaxed">{p.description}</p>
@@ -117,7 +118,7 @@ export default function Products() {
                 <p className="text-xs font-semibold text-text-secondary uppercase tracking-wide mb-2">Совместимость</p>
                 <div className="flex flex-wrap gap-2">
                   {p.compatibility.map((c) => (
-                    <span key={c} className="bg-bg-light text-text text-xs font-medium px-2.5 py-1 rounded-lg border border-border">
+                    <span key={c} className="bg-[#ffc107] text-text text-xs font-medium px-2.5 py-1 rounded-lg border border-border">
                       {c}
                     </span>
                   ))}
