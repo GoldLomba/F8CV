@@ -1,3 +1,5 @@
+import f8cvImage from "@/images/F8CV.jpeg";
+
 export default function Hero() {
   return (
     <section className="bg-white py-12 md:py-20">
@@ -58,7 +60,7 @@ export default function Hero() {
 
           {/* Right — Engine illustration */}
           <div className="flex-1 flex justify-center">
-            <img src="../src/images/F8CV.jpeg" alt=""  className="image-decor"/>     
+            <img src={f8cvImage} alt="" className="image-decor" />
           </div>
         </div>
       </div>
