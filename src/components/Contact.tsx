@@ -10,6 +10,17 @@ function MaxIcon({ className }: { className?: string }) {
   );
 }
 
+const MAX_URL = 'https://max.ru/u/f9LHodD0cOLqAXpgA53WqMtakiGF0eK1GAp67QiTkmHbtmUjt9s7_BVCaEo';
+const TELEGRAM_URL = 'https://t.me/+79382060824';
+
+function TelegramIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.658-.643.136-.953l11.566-4.458c.538-.196 1.006.128.832.939z" />
+    </svg>
+  );
+}
+
 export default function Contact() {
   return (
     <section id="contact" className="bg-bg-light py-16 md:py-20">
@@ -19,7 +30,7 @@ export default function Contact() {
           <p className="text-text-secondary mt-3">Ответим на все вопросы, поможем с выбором двигателя</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {/* Phone */}
           <a
             href="tel:+79382060824"
@@ -37,7 +48,7 @@ export default function Contact() {
 
           {/* MAX мессенджер */}
           <a
-            href="https://max.ru/+79382060824"
+            href={MAX_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="border border-gray-200 rounded-2xl p-6 text-center hover:shadow-md transition-shadow bg-white"
@@ -47,6 +58,21 @@ export default function Contact() {
             </div>
             <h3 className="text-base font-bold text-slate-800">MAX мессенджер</h3>
             <p className="text-primary font-bold text-lg mt-2">Написать</p>
+            <p className="text-xs text-slate-400 mt-1">Ответим за 10 минут</p>
+          </a>
+
+          {/* Telegram */}
+          <a
+            href={TELEGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-gray-200 rounded-2xl p-6 text-center hover:shadow-md transition-shadow bg-white"
+          >
+            <div className="w-12 h-12 bg-[#0088cc]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TelegramIcon className="w-7 h-7 text-[#0088cc]" />
+            </div>
+            <h3 className="text-base font-bold text-slate-800">Telegram</h3>
+            <p className="text-[#0088cc] font-bold text-lg mt-2">Написать</p>
             <p className="text-xs text-slate-400 mt-1">Ответим за 10 минут</p>
           </a>
 
@@ -81,13 +107,22 @@ export default function Contact() {
               +7 (938) 206-08-24
             </a>
             <a
-              href="https://max.ru/+79382060824"
+              href={MAX_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-3.5 rounded-xl hover:bg-white/10 transition"
             >
               <MaxIcon className="w-7 h-7" />
               MAX мессенджер
+            </a>
+            <a
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-3.5 rounded-xl hover:bg-white/10 transition"
+            >
+              <TelegramIcon className="w-6 h-6" />
+              Telegram
             </a>
           </div>
         </div>
